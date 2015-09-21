@@ -48,7 +48,7 @@ Backend
 The backend side consists of Java Servlets code to service requests from the web interface, as well the core implementation of the data structures and caching used to maintain
 the bus stops data. There are two Servlets: "BusStops" for finding the nearest stops to a given location coordinate, and "Departures" for serving the list of departure (arrival) times
 for a given bus stop.
-package com.kvon.departures.server.svcode has the code responsible for fetching and maintaining a cache of stop information. Here is the details of how the caching works:
+"package com.kvon.departures.server.svcode" has the code responsible for fetching and maintaining a cache of stop information. Here is the details of how the caching works:
 At the bootstrap, all the stop names are loaded and stored in a cache. Along with this information, the stop location coordinates are also stored in a separate data structure.
 Then, according to the spatial span of all these stops (their minimum and maximum latitude and longitude coordinates in the space), the map is partitioned into a set of quadrants, and
 for each quadrants the set of stops belonging to that quadrant is calculated. This partitioning enables significant reduction of computation time in finding the nearest stops to a given
