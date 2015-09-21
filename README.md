@@ -19,7 +19,7 @@ http://1-dot-static-anchor-107517.appspot.com/
 
 <p>
 In designing these services, one of the main goals was to make the frontend interface intuitive and simple for the user, while providing
-efficiency and fast response times in the backend, in order to make it more practical than using the raw XML-based API. \.
+efficiency and fast response times in the backend, in order to make it more practical than using the raw XML-based API.
 
 For the UI visualization, I used Google Maps Javascript API which makes it easy to customize and view information on maps. Using this API, the location
 of the user can also be retrieved and loaded, once the web page is launched. 
