@@ -61,7 +61,7 @@ which we are looking for,
 the neighbouring quadrants are also searched for their stops. At the end of this search, we have a list of stops of a given size, where another pruning is performed to return the list
 of stops that lie within some radius of the given location (500 meters in the implementation).
 By doing so, the list of nearest stops is restricted to a much smaller set of nodes, as opposed to searching the entire
-space of bus stops; also the large delay of loading the data from the Nextbus server every single time is prevented
+space of bus stops; also the larger delay of loading the data from the Nextbus server at every single query is prevented
 by the caching mechanism.
 </p>
 <p>
