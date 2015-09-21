@@ -1,0 +1,2 @@
+serviceClass: kvon.departures.client.GreetingService
+path: 64F315BBE60DBF3DBB20F168B329A715.gwt.rpc

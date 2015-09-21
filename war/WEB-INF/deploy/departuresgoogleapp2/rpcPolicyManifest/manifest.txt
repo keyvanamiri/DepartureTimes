@@ -1,0 +1,3 @@
+# Module departuresgoogleapp2
+# RPC service class, partial path of RPC policy file
+kvon.departures.client.GreetingService, 64F315BBE60DBF3DBB20F168B329A715.gwt.rpc
