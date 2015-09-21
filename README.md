@@ -18,8 +18,8 @@ http://1-dot-static-anchor-107517.appspot.com/
 </p>
 
 <p>
-In designing these services, one of the main goals was to make the frontend interface intuitive and simple, while providing
-efficiency and fast response times in the bato the user queriesThe goal of the whole design was making transpotational data rettrieval both intutive yet efficient retireving useful information about nearest stops to the user in near realtime.
+In designing these services, one of the main goals was to make the frontend interface intuitive and simple for the user, while providing
+efficiency and fast response times in the backend, in order to make it more practical than using the raw XML-based API. \.
 
 For the UI visualization, I used Google Maps Javascript API which makes it easy to customize and view information on maps. Using this API, the location
 of the user can also be retrieved and loaded, once the web page is launched. 
