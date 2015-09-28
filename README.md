@@ -5,7 +5,7 @@ Providing Bus Departure Times in near Real-Time
 </h1>
 
 <p>
-The purpose of this project was to design a service that gives real-time departure times for public transportation. 
+The purpose of this project is to design a service that gives real-time departure times for public transportation. 
 I implemented this service using the freely available data on Nextbus. Here, I overview some of the major 
 implementation aspects and design choices I made for the project.
 The implemented service provides two types of information and interactions between the user and the server.
@@ -19,7 +19,7 @@ http://1-dot-static-anchor-107517.appspot.com/
 
 <p>
 In designing these services, one of the main goals was to make the frontend interface intuitive and simple for the user, while providing
-efficiency and fast response times in the backend, in order to make it more practical than using the raw XML-based API.
+efficiency and fast response times in the backend, in order to make it more practical than querying the raw XML-based API.
 
 The solution presented here is a full-stack solution, with more emphasis on the backend.
 For the UI visualization, I used Google Maps Javascript API which makes it easy to customize and view information on maps. Using this API, the location
@@ -38,7 +38,7 @@ Frontend
 In the frontend, the map is loaded using Google Maps API as was mentioned earlier. Once loaded, the user can specify their desired location by dragging the marker, and once the
 marker is placed at a new location, the new bus stops near that location are loaded and displayed. Upon clicking on one of these stops, the detailed information about that stop and its
 associated route as well
-as departure (or arrival) times are displayed. Every click on one of the stops (it can be the same stop as well), will show the current up-to-date prediction of next departure times for
+as departure (or arrival) times are displayed. Every click on one of the stops (it can be the same stop as well), will show the current up-to-date prediction of the next departure times for
 that stop. The data for this queries are provided through communication done through jQuery with the backend Servlets. 
 </p>
 
@@ -62,7 +62,7 @@ which we are looking for,
 the neighbouring quadrants are also searched for their stops. At the end of this search, we have a list of stops of a given size, where another pruning is performed to return the list
 of stops that lie within some radius of the given location (500 meters in the implementation).
 By doing so, the list of nearest stops is restricted to a much smaller set of nodes, as opposed to searching the entire
-space of bus stops; also the larger delay of loading the data from the Nextbus server at every single query is prevented
+space of bus stops; also the larger delay of loading the data from the Nextbus server at every single query is avoided
 by the caching mechanism.
 </p>
 <p>
@@ -78,9 +78,7 @@ This design keeps these queries at a near minimal amount, which would greatly sp
 
 
 <h1> Lessons from the Project and Future Goals </h1>
-I really enjoyed working on this project, as I had to incorporate different aspects both in terms of frontend simplicity and backend 
-efficiency. This also made me think of some of the interesting challenges that exist at Uber, in particular as it's related to finding
-the closest available drivers to a user. 
+In this project, I incorporated different aspects of full-stack engineering, both in terms of frontend simplicity and backend efficiency. 
 I also thought about some of the possible future enhancements to my current implementation such as:
 
 <ul>
